@@ -6,6 +6,8 @@
     "eslint": "^9.20.1",
     "eslint-plugin-vue": "^9.32.0",
     "globals": "^15.15.0",
+    "prettier": "3.5.1",
+    "steiger": "^0.5.5",
     "typescript": "^5.7.3",
     "typescript-eslint": "^8.24.0",
     "vite": "^6.1.0"
@@ -13,9 +15,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview",
-    "lint": "eslint . --ext .js,.vue",
-    "lint:fix": "eslint . --ext .js,.vue --fix"
+    "lint": "eslint . --report-unused-disable-directives --max-warnings 0",
+    "check-fsd": "npx steiger .\\src",
+    "format": "prettier . --write"
   },
   "dependencies": {
     "@nabla/vite-plugin-eslint": "^2.0.5"
