@@ -1,7 +1,5 @@
 <template>
-  <div id="app">
-    <SignInPage></SignInPage>
-  </div>
+  <SignInPage></SignInPage>
 </template>
 
 <script setup lang="ts">

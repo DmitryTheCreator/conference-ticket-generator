@@ -21,6 +21,7 @@
     "format": "prettier . --write"
   },
   "dependencies": {
-    "@nabla/vite-plugin-eslint": "^2.0.5"
+    "@nabla/vite-plugin-eslint": "^2.0.5",
+    "normalize.css": "^8.0.1"
   }
 }
